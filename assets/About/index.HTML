@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Contact/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+  
+  <nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+    <ul>
+      <li><a href='C:\Users\davis\myfirstrepo\DJNIF\assets\Contact\index.HTML'>Contact Us</a></li>
+      
+      <li><a href='C:\Users\davis\myfirstrepo\DJNIF\assets\About\index.HTML'>About</a></li>
+      <li><a href='C:\Users\davis\myfirstrepo\DJNIF\assets\services\index.HTML'>Services</a>
+       
+      </li>
+      <li><a href='C:\Users\davis\myfirstrepo\DJNIF\index.HTML'>Home</a></li>
+    </ul>
+    <h2><a href="#" class="logo">DJ<span>NIF</span></a></h2>
+  </nav>
+  
+  
+      <section class="about" id="about">
+        <div class="about-img">
+           <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/350331741_3531324700469000_7034402219623763381_n.jpg?_nc_cat=110&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IQ8siX3C758AX8_UNvy&_nc_ht=scontent-iad3-1.xx&oh=00_AfAncHGOXrUN2ZWccEsah6k8E3IoH8nQ-LIpjPEy5jGNaw&oe=64BD50EC">
+        </div>
+        <div class="about-text">
+          <h1>About Us</h1>
+          <h5>DJ NIF</h5>
+          <p>I'm a New Jersey DJ! Music is my passion. I want to share my love for it with everyone.
+          So that I can bring you and your family memories that will last a lifetime. </p>
+          <p>Contact Me: (908)-338-0524</p>
+        </div>
+        </section>
+      <br>
+       <footer>
+            
+       </footer> 
+      </div>
+
+
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+.logo{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+#menu {
+	background: green;
+	color: #FFF;
+	height: 45px;
+	padding-left: 18px;
+	border-radius: 0px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	padding-right: 30px;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: right;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: black;
+	background: #F2F2F2;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+@media (max-width: 480px) {
+    body {
+        background-image: url(images/background-mobile.jpg);
+    }
+}
+body{
+  background-color: black;
+}
+.about{
+    background: var();
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 100px;
+    padding-left: 65px;
+}
+.about-img img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.about-text h2{
+  color: #FFF;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-text h1{
+  color: #FFF;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.about-text h5{
+     color: green;  
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;  
+}
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    max-width: 590px;
+    font-size: var(--p-font);
+    margin-bottom: 45px;
+}
+@media (max-width:990px) {
+    
+    .navbar.active{
+        top: 100%;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about-img img{
+        max-width: 100%;
+        width: 700px;
+        height: auto;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-img{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .box img{
+        max-width: 100%;
+        width: 760px;
+        height: auto;
+    }
+}
+
+
+    </style>
+
+</body>
+</html>

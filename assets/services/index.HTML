@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/Contact/styles.css">
+    <title>Document</title>
+</head>
+<body>
+     
+  <nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+    <ul>
+      <li><a href='C:\Users\davis\myfirstrepo\DJNIF\index.HTML'>Contact Us</a></li>
+      <li><a href='C:\Users\davis\myfirstrepo\DJNIF\assets\About\index.HTML'>About</a></li>
+      <li><a href='C:\Users\davis\myfirstrepo\DJNIF\assets\services\index.HTML'>Services</a></li>
+      <li><a href='C:\Users\davis\myfirstrepo\DJNIF\index.HTML'>Home</a></li>
+    </ul>
+    <a href="#" class="logo">DJ<span>NIF</span></a>
+  </nav>
+  
+    
+
+    <h1 class="heading">My Services</h1>
+    <div class="box-container">
+      <div class="box">
+      <div class="icon">
+       
+       <span class="fa-solid fa-bell"></span>
+      </div>
+      <h3 class="title">Weddings</h3>
+      <p>   The day when you, and your spouse Start your new life. So make sure you have me. The best in setting the mood. </p>
+      
+      </div>
+      
+       <div class="box">
+      <div class="icon">
+        
+       <span class="fa-solid fa-graduation-cap"></span>
+      </div>
+      <h3 class="title">Graduations</h3>
+      <p>  Graduations day marks journey to new path in your life. With the right sounds I can get you headed in the direction.</p>
+      </div>
+      
+       <div class="box">
+      <div class="icon">
+        
+ 
+       <span class="fa-solid fa-music"></span>
+      </div>
+      <h3 class="title">Baby Shower</h3>
+      <p> There is nothing like bringing life into the world. Family is everything and the birth of a new born special. So lets make it last.  </p>
+    
+      </div>
+      
+    </div>
+<h3><i><u>Time to play your best hand</u></i></h3>
+<footer class="footer">
+    <div class="icons">
+       <a href="#"><i class="fab fa-facebook"></i></a>
+       <a href="#"><i class="fab fa-linkedin"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+        <p class="fellow">
+           Fellow me on Facebook
+        </p>
+    </div>
+</footer>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  margin:0; padding:0; 
+  box-sizing:border-box;
+  text-transform:capitalize;
+}
+body{
+  background: gray;
+}
+.heading{
+  text-align:center;
+  font-size:35px;
+  padding:20px 0;
+  padding-top: 100px;
+  color: purple;
+}
+.box-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  grid-gap:15px;
+  padding: 70px;
+  padding-top: 70px;
+}
+.box-container .box{
+  padding: 30px;
+  border-radius:60px;
+  background:#fff;
+  border:2px solid purple;
+  text-align:center;
+  
+}
+.box-container .box .icon{
+  margin-top:10px;
+}
+.box-container .box .icon span{
+  margin:10px 0;
+  font-size:35px;
+  color:#666;
+  
+}
+.box-container .box .title{
+  color: purple;
+  font-size:20px;
+}
+.box-container .box p{
+  font-size:13px;
+  color:#666;
+  padding:10px;
+}
+.box-container .box a{
+  color: purple;
+  text-decoration:none;
+  display:block;
+  padding: 10px;
+  font-size:17px;
+  cursor:pointer;
+}
+.box-container .box a:hover{
+  color:#666;
+}
+h3{
+    text-align: center;
+    padding-top: 30px;
+    color: purple;
+}
+.logo{
+    font-size: x-large;
+    text-align: center;
+	
+}
+.logo span{
+	color: purple;
+	letter-spacing: 2px;
+	
+}
+
+.media-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%; 
+    background-color: black;
+    font-size: 25px;
+}
+#menu {
+	background: black;
+	color: #FFF;
+	height: 45px;
+	padding-left: 18px;
+	border-radius: 0px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	padding-right: 30px;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: right;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 20px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: purple;
+	background: #F2F2F2;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+@media (max-width: 380px) {
+    body {
+        background-image: url(images/background-mobile.jpg);
+    }
+}
+
+.footer{
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background: black;
+text-align: center;
+color: #f4f4f4;
+}
+
+.icons{
+padding-top: 1rem;
+}
+
+.icons a{
+text-decoration: none;
+font-size: 2rem;
+margin: 0.5rem;
+color: #f4f4f4;
+}
+
+@media (max-width: 500px){
+html{
+    font-size: 50%;
+}
+}    
+
+@media(min-width: 501px) and (max-width: 768px){
+html{
+font-size: 50%;
+}
+}    
+
+@media screen and (max-width: 800px){
+#menu {
+  position:relative
+}
+#menu ul {
+  background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none
+}
+#menu ul.sub-menus {
+  width:100%;position:static;
+}
+#menu ul.sub-menus a {
+  padding-left:30px;
+}
+#menu li {
+  display:block;float:none;width:auto;
+}
+#menu input, #menu label {
+  position:absolute;top:0;left:0;display:block
+}
+#menu input {
+  z-index:4
+}
+#menu input:checked + label {
+  color:white
+}
+#menu input:checked + label:before {
+  content:"\00d7"
+}
+#menu input:checked ~ ul {
+  display:block
+}
+}
+
+</style> 
+
+  
+
+
+
+
+   
+</body>
+</html>
