@@ -27,7 +27,177 @@
  <!---- <h1><i>Your Favorites DJ Favorite DJ</i></h1>--->
   
   
-  
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+h1{
+	float: right;
+	padding-top: 150px;
+	padding-right: 	300px;
+	color: red;
+	
+}
+.logo{
+    font-size: x-large;
+    text-align: center;
+	
+}
+.logo span{
+	color: red;
+	letter-spacing: 2px;
+	
+}
+
+.media-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%; 
+    background-color: black;
+    font-size: 25px;
+}
+body{
+    border: 2px solid black;
+    background-image: url("https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/352073723_278347331268660_6735619996234840231_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tTmNPZoQ9IgAX9ScUcC&_nc_ht=scontent-iad3-1.xx&oh=00_AfA_bw1kFe6id8Ed-ZHtRm7wgfjAnoRaWidG2_BbHt_7SA&oe=64D49EA3");
+    background-repeat: no-repeat-x;
+    background-size: cover;
+    background-position: center center;
+    height: 130vh;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+#menu {
+	background: ;
+	color: #FFF;
+	height: 45px;
+	padding-left: 18px;
+	border-radius: 0px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	padding-right: 30px;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: right;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 20px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: red;
+	background: #fff;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width: 800px){
+	#menu {
+		position:relative;
+    }
+	#menu ul {
+		background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none
+    }
+	#menu ul.sub-menus {
+		width:100%;position:static;
+    }
+	#menu ul.sub-menus a {
+		padding-left:30px;
+    }
+	#menu li {
+		display:block;float:none;width:auto;
+    }
+	#menu input, #menu label {
+		position:absolute;top:0;left:0;display:block
+    }
+	#menu input {
+		z-index:4
+    }
+	#menu input:checked + label {
+		color:white
+	}
+	#menu input:checked + label:before {
+		content:"\00d7"
+	}
+	#menu input:checked ~ ul {
+		display:block
+	}
+}
+@media (max-width: 280px) {
+    body {
+        background-image: url(https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/352073723_278347331268660_6735619996234840231_n.jpg?_nc_cat=109&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=upxHmRNBlpIAX-ADId_&_nc_ht=scontent-iad3-1.xx&oh=00_AfA73MWVPUkn1MSuAiYEISA_dsT9Hd1bhb4NSRNDRKRgzg&oe=64BAE963");
+    }
+	body{
+	text-align: center;
+	padding-left: 500px;
+		
+	}
+}
+  </style>
   
   
    
